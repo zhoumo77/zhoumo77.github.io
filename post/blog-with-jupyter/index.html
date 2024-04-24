@@ -326,7 +326,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Academic" />
 <meta property="og:url" content="https://example.com/post/blog-with-jupyter/" />
-<meta property="og:title" content="Blog with Jupyter Notebooks! | Academic" />
+<meta property="og:title" content="如何使用 | Academic" />
 <meta property="og:description" content="Easily blog from Jupyter notebooks!" /><meta property="og:image" content="https://example.com/post/blog-with-jupyter/featured.png" /><meta property="og:locale" content="en-us" />
 
   
@@ -364,7 +364,7 @@
     "@type": "WebPage",
     "@id": "https://example.com/post/blog-with-jupyter/"
   },
-  "headline": "Blog with Jupyter Notebooks!",
+  "headline": "如何使用",
   
   "image": [
     "https://example.com/post/blog-with-jupyter/featured.png"
@@ -408,7 +408,7 @@
 
 
   
-  <title>Blog with Jupyter Notebooks! | Academic</title>
+  <title>如何使用 | Academic</title>
 
   
   
@@ -851,7 +851,7 @@
 
 
 <div class="article-container pt-3">
-  <h1>Blog with Jupyter Notebooks!</h1>
+  <h1>如何使用</h1>
 
   
 
@@ -913,45 +913,22 @@
   <div class="article-container">
 
     <div class="article-style">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">Image</span>
-</span></span><span class="line"><span class="cl"><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;</span><span class="p">)</span>
-</span></span></code></pre></div><p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="d-flex justify-content-center">
-    <div class="w-100" ><img alt="png" srcset="
-               /post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_73179593afc46954cb4c21418984f7f4.webp 400w,
-               /post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_6b76da17c04a40aee4c1c633206f8065.webp 760w,
-               /post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-               src="/post/blog-with-jupyter/output_1_0_hu1e42f419f47ffd4b1ca9ef8f6670390a_11155_73179593afc46954cb4c21418984f7f4.webp"
-               width="601"
-               height="203"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Welcome to Academic!&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><pre><code>Welcome to Academic!
-</code></pre>
-<h2 id="organize-your-notebooks">Organize your notebooks</h2>
-<p>Place the notebooks that you would like to publish in a <code>notebooks</code> folder at the root of your website.</p>
-<h2 id="import-the-notebooks-into-your-site">Import the notebooks into your site</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">pipx install academic
-</span></span><span class="line"><span class="cl">academic import <span class="s1">&#39;notebooks/**.ipynb&#39;</span> content/post/ --verbose
-</span></span></code></pre></div><p>The notebooks will be published to the folder you specify above. In this case, they will be published to your <code>content/post/</code> folder.</p>
+      <h3 id="1修改">1.修改</h3>
+<p>直接搜索想要修改的文字，替换掉，想要在本地预览。需要在开发者模式下运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo server -D
+</span></span></code></pre></div><h3 id="2修改完之后">2.修改完之后</h3>
+<p>运行</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">hugo
+</span></span></code></pre></div><p>将会在public目录下生成静态html文件</p>
+<h3 id="3发布修改后的文件">3.发布修改后的文件</h3>
+<p>进入public目录，提交所有修改生成的新文件,依次执行以下命令</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> public
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">git commit -m <span class="s1">&#39;备注&#39;</span>
+</span></span><span class="line"><span class="cl">git push
+</span></span></code></pre></div><h3 id="4访问你的github主页预览">4.访问你的github主页预览</h3>
+<p>访问<a href="https://zhoumo77.github.io/" target="_blank" rel="noopener">https://zhoumo77.github.io/</a>预览</p>
+<p>如果没有及时更新，多刷新几次！</p>
 
     </div>
 
@@ -978,7 +955,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;text=Blog&#43;with&#43;Jupyter&#43;Notebooks%21" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;text=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -995,7 +972,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;t=Blog&#43;with&#43;Jupyter&#43;Notebooks%21" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;t=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -1014,7 +991,7 @@
         
       
       <li>
-        <a href="mailto:?subject=Blog%20with%20Jupyter%20Notebooks%21&amp;body=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+        <a href="mailto:?subject=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8&amp;body=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -1031,7 +1008,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;title=Blog&#43;with&#43;Jupyter&#43;Notebooks%21" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;title=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -1048,7 +1025,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Blog&#43;with&#43;Jupyter&#43;Notebooks%21%20https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+        <a href="whatsapp://send?text=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%20https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -1065,7 +1042,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;title=Blog&#43;with&#43;Jupyter&#43;Notebooks%21" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fexample.com%2Fpost%2Fblog-with-jupyter%2F&amp;title=%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
